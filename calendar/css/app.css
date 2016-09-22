@@ -3,9 +3,18 @@ body {
     font-size: 15px;
     line-height: 1.5rem;
 }
-.container {
+.calendar-wrapper {
     width: 65%;
     margin: 10px auto;
     background: #fff;
     overflow: auto;
+}
+.otherMonth {
+
+}
+.day {
+
+}
+.date {
+    
 }

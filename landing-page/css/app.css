@@ -153,6 +153,8 @@ strong {
         float: none;
         margin: auto;
         display: block;
+    }
+    .contactForm {
         margin-bottom: 20px;
     }
 }

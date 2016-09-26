@@ -45,6 +45,10 @@ h1 {
     height: 350px;
     position: relative;
 }
+ .slides li {
+     position: absolute;
+     z-index: 50;
+ }
 .thumbs li a:hover span {
     position: absolute;
     z-index: 101;
@@ -76,34 +80,30 @@ h1 {
     left:5px;
 }
 
-@keyframes moveSquare {
+@keyframes slide {
     0% {
-        top: 50px;
-        left: 50px;
-    }
-    25% {
-        top: 50px;
-        left: 350px;
-        background: hotpink;
-        transform: rotate(90deg);
-        border-radius: 50%;
-    }
-    50% {
-        top: 350px;
-        left: 350px;
-        background: dodgerblue;
-        transform: rotate(180deg);
-    }
-    75% {
-        top: 350px;
-        left: 50px;
-        background: orangered;
-        transform: rotate(90deg);
+        left: -500px;
     }
     100% {
-        top: 50px;
-        left: 50px;
-        transform: rotate(0deg);
-        border-radius: 0%;
+        left: 0px;
     }
+}
+.slides li:target {
+    z-index: 100;
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes noTarget {
+    0% {
+        z-index: 75;
+    }
+    100% {
+        z-index: 75;
+    }
+}
+.slides li:not(:target) {
+    animation-name: noTarget;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }

@@ -28,6 +28,65 @@ header {
     min-height: 700px;
     margin: 20px 0;
 }
+.block {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+.year {
+    background: url(../img/point-big.png) no-repeat 50% 20px;
+    display: block;
+    width: 70px;
+    height: 90px;
+    text-align: center;
+    margin: auto;
+}
+.year div {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 43px 0 0 0;
+    text-align: center;
+}
+.event {
+    background: url(../img/point-small.png) no-repeat top center;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    visibility: visible;
+}
+.event > div {
+    width: 45%;
+    position: relative;
+}
+.event div div {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+}
+.event-left {
+    float: left;
+    background: url(../img/arrow-right.png) no-repeat top right;
+}
+.event-right {
+    float: right;
+    background: url(../img/arrow-left.png) no-repeat 0 0;
+}
+.event-right div {
+    margin-left: 25px;
+}
+.event-left div {
+    margin-right: 25px;
+}
+.event time {
+    background: #c03b44;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+}
 footer {
     background: #5e6482;
     height: 40px;

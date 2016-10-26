@@ -1,0 +1,20 @@
+.container {
+    width: 80%;
+}
+.table-block {
+    float: none;
+    width: 100%;
+
+    &:hover {
+        border: 0;
+    }
+}
+.table-highlight {
+    height: auto;
+    margin-top: 0;
+    border: 0;
+
+    .table-buy {
+        margin-top: 0;
+    }
+}

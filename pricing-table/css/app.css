@@ -1,4 +1,105 @@
 /* Import files */
+.container {
+  width: 80%; }
+
+.table-block {
+  float: none;
+  width: 100%; }
+  .table-block:hover {
+    border: 0; }
+
+.table-highlight {
+  height: auto;
+  margin-top: 0;
+  border: 0; }
+  .table-highlight .table-buy {
+    margin-top: 0; }
+
 body {
+  background-color: #242e30;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5em; }
+
+em {
+  font-style: bold;
+  color: #3c8b9c; }
+
+a {
+  text-decoration: none; }
+
+.table-buy {
+  padding: 7px;
+  border: #ccc solid 1px;
+  text-align: center;
+  display: block;
+  margin: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background: #6fbf44; }
+  .table-buy:hover {
+    background: #65a443; }
+
+.container {
+  width: 900px;
+  margin: 50px auto;
+  max-width: 900px; }
+
+.table-block {
+  float: left;
+  width: 23%;
+  margin: 0 1%;
+  box-sizing: border-box;
   background: #fff;
-  font-size: 1rem; }
+  overflow: hidden;
+  margin-bottom: 10px; }
+  .table-block h3 {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    padding: 15px; }
+
+.price {
+  text-align: center;
+  padding: 20px;
+  background: #3c8b9c;
+  color: #fff; }
+  .price span {
+    font-size: 25px;
+    font-weight: bold; }
+
+.features li {
+  line-height: 2em;
+  text-align: center;
+  padding: 10px 0; }
+
+.features em {
+  font-weight: bold; }
+
+.features li:nth-child(odd) {
+  background: #f4f4f4; }
+
+.table-highlight {
+  margin-top: -30px;
+  border: #fff solid 4px; }
+  .table-highlight .table-buy {
+    margin-top: 7px; }
+  .table-highlight li {
+    padding: 12px !important; }
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%; }
+  .table-block {
+    float: none;
+    width: 100%; }
+    .table-block:hover {
+      border: 0; }
+  .table-highlight {
+    height: auto;
+    margin-top: 0;
+    border: 0; }
+    .table-highlight .table-buy {
+      margin-top: 0; } }

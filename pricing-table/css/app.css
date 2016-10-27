@@ -1,20 +1,6 @@
 /* Import files */
-.container {
-  width: 80%; }
-
-.table-block {
-  float: none;
-  width: 100%; }
-  .table-block:hover {
-    border: 0; }
-
-.table-highlight {
-  height: auto;
-  margin-top: 0;
-  border: 0; }
-  .table-highlight .table-buy {
-    margin-top: 0; }
-
+/* Number of columns */
+/* Colors */
 body {
   background-color: #242e30;
   font-family: 'Lato', sans-serif;
@@ -60,6 +46,8 @@ a {
     text-align: center;
     font-size: 22px;
     padding: 15px; }
+  .table-block:hover {
+    border: 4px #242e30 solid; }
 
 .price {
   text-align: center;

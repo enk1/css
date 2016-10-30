@@ -44,6 +44,10 @@ a {
 .nav > li > a:hover, .nav > li > a:focus {
     background: none;
 }
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #406c96;
+    color: #fff;
+}
 .navbar li:hover {
     background: #f4f4f4;
     cursor: pointer;
@@ -174,4 +178,43 @@ img.imac.animate{
     transform: translate(-40em, 0);
     -moz-transform: translate(-40em, 0);
     -webkit-transform: translate(-40em, 0);
+}
+
+@media(min-width: 601px) and (max-width: 960px) {
+    .content-devices img.laptop{
+        width: 235px;
+    }
+    .content-devices img.desktop{
+        width: 293px;
+    }
+    .content-devices img.mobile{
+        width: 148px;
+    }
+
+}
+@media (max-width: 600px) {
+    .content-devices img.laptop{
+        display: none;
+    }
+    .content-devices img.desktop{
+        width: 263px;
+    }
+    .content-devices img.mobile{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    h2, h2.highlight-primary {
+        font-size: 25px;
+        text-align: center;
+        display: block;
+        line-height: 1.5em;
+    }
+    .content-icons i {
+        margin-top: 20px;
+    }
 }

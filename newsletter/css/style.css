@@ -155,7 +155,7 @@ footer {
   }
   .item-left,
   .item-right {
-    float: none;
-    width: 100%;
+    float: none !important;
+    width: 100% !important;
   }
 }

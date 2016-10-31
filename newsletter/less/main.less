@@ -1,0 +1,155 @@
+@import "variables.less";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: @secondary-color;
+    font-family: 'Lato', sans-serif;
+    color: #666;
+    line-height: 1.8rem;
+    font-size: 14px;
+}
+.container {
+    width: 55%;
+    margin: 20px auto;
+    overflow: hidden;
+    background: #fff;
+    .border-radius;
+}
+a {
+    color: @primary-color;
+    text-decoration: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.8rem;
+    margin-bottom: 10px;
+}
+.clearfix {
+    clear: both;
+}
+nav {
+    height: 30px;
+    background: @primary-color;
+    color: #fff;
+    padding: 5px 5px 0 5px;
+    ol {
+        float: right;
+    }
+    li {
+        float: left;
+        padding: 0 10px;
+        border-right: 1px dotted #fff;
+    }
+    li:last-child {
+        border-right: none;
+    }
+    a {
+        color: #fff;
+    }
+    a:hover {
+        color: #ccc;
+    }
+}
+header {
+    padding: 10px;
+}
+.showcase {
+    border-top: @primary-color 5px solid;
+    border-bottom: @primary-color 5px solid;
+
+    img {
+        margin-bottom: -9px;
+        width: 100%;
+    }
+}
+.page-header {
+    border-bottom: #ccc solid 1px;
+}
+.content {
+    padding: 10px 15px;
+}
+.specials {
+    margin: 20px 0;
+    li {
+        width: 33%;
+        float: left;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    img {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 3px;
+    }
+}
+.heading-primary {
+    background: @primary-color;
+    color: #fff;
+    padding: 4px 10px;
+}
+.heading-secondary {
+    background: @secondary-color;
+    color: #fff;
+    padding: 4px 10px;
+}
+.new-items {
+    margin: 20px 0;
+    li {
+        border-bottom: #f3f3f3 solid 1px;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        overflow: hidden;
+    }
+    img {
+        width: 85%;
+        padding: 3px;
+        border: 1px solid #ccc;
+    }
+    .item-left {
+        float: left;
+        width: 20%;
+    }
+    .item-right {
+        float: right;
+        width: 79%;
+    }
+}
+footer {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+@media(max-width: 960px) {
+    .container {
+        width: 70%;
+    }
+}
+@media(max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+@media(max-width: 568px) {
+    .container {
+        width: 90%;
+    }
+    .specials li {
+        float: none;
+        width: 100%;
+    }
+    .specials img {
+        width: 100%;
+    }
+    .new-items img {
+        width: 97%;
+    }
+    .item-left, .item-right {
+        float: none !important;
+        width: 100% !important;
+    }
+}
